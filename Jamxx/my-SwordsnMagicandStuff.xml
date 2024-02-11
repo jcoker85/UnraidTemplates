@@ -17,7 +17,7 @@
     <Category>GameServers:</Category>
     <WebUI/>
     <TemplateURL/>
-    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/images/swordsnmagicandstuff.png</Icon>
+    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/Jamxx/images/swordsnmagicandstuff.png</Icon>
     <ExtraParams>--restart=unless-stopped</ExtraParams>
     <PostArgs/>
     <CPUset/>

@@ -17,7 +17,7 @@
     <Category>GameServers:</Category>
     <WebUI/>
     <TemplateURL/>
-    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/images/sunkenland.ico</Icon>
+    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/Jamxx/images/sunkenland.ico</Icon>
     <ExtraParams>--restart=unless-stopped</ExtraParams>
     <PostArgs/>
     <CPUset/>
