@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
-<Container version="2">
-  <Name>GoldeneyeSourceServer</Name>
-  <Repository>jcoker85/goldeneyesourceserver</Repository>
-  <Registry>https://hub.docker.com/r/jcoker85/goldeneyesourceserver</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
-  <Privileged>false</Privileged>
-  <Support>https://github.com/jcoker85/UnraidGameServers/issues</Support>
-  <Project>https://github.com/jcoker85/UnraidGameServers/tree/goldeneyesourceserver</Project>
-  <Overview>This Docker will download and install SteamCMD. It will also install a Goldeneye Source server and run it.&#xD;
-    &#xD;
-    **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
-    &#xD;
-    Update Notice: Simply restart the container if a newer version of the game is available.</Overview>
-  <Category>GameServers:</Category>
-  <WebUI/>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/images/gsstransparent.png</Icon>
-  <ExtraParams>--restart=unless-stopped</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled/>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
-  <Config Name="Server Data" Target="/servers/geserver" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/goldeneyesourceserver</Config>
-  <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your start up commands for the server." Type="Variable" Display="always" Required="false" Mask="false">-port 27030</Config>
-  <Config Name="Map" Target="MAP" Default="ge_archives" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">ge_depot</Config>
-  <Config Name="Max Player Count" Target="MAXPLAYERS" Default="10" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">10</Config>
-  <Config Name="TCP Port" Target="27030" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
-  <Config Name="UDP Port" Target="27030" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
-  <Config Name="Client Port" Target="27005" Default="" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">27005</Config>
-  <Config Name="Steam Port" Target="26900" Default="" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">26900</Config>
-  <Config Name="SourceTV Port" Target="27020" Default="" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">27020</Config>
+<Container version="1">
+    <Name>GoldeneyeSourceServer</Name>
+    <Repository>jcoker85/goldeneyesourceserver</Repository>
+    <Registry>https://hub.docker.com/r/jcoker85/goldeneyesourceserver</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/jcoker85/UnraidGameServers/issues</Support>
+    <Project>https://github.com/jcoker85/UnraidGameServers/tree/goldeneyesourceserver</Project>
+    <Overview>This Docker will download and install SteamCMD. It will also install a Goldeneye Source server and run it.&#xD;
+        &#xD;
+        **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
+        &#xD;
+        Update Notice: Simply restart the container if a newer version of the game is available.</Overview>
+    <Category>GameServers:</Category>
+    <WebUI/>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/images/gsstransparent.png</Icon>
+    <ExtraParams>--restart=unless-stopped</ExtraParams>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled/>
+    <DonateText/>
+    <DonateLink/>
+    <Requires/>
+    <Config Name="Server Data" Target="/servers/geserver" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/goldeneyesourceserver</Config>
+    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your start up commands for the server." Type="Variable" Display="always" Required="false" Mask="false">-port 27030</Config>
+    <Config Name="Map" Target="MAP" Default="ge_archives" Mode="" Description="Map that server will start on." Type="Variable" Display="always" Required="false" Mask="false">ge_depot</Config>
+    <Config Name="Max Player Count" Target="MAXPLAYERS" Default="10" Mode="" Description="Maximum player count allowed on the server." Type="Variable" Display="always" Required="false" Mask="false">10</Config>
+    <Config Name="TCP Port" Target="27030" Default="" Mode="tcp" Description="Game port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
+    <Config Name="UDP Port" Target="27030" Default="" Mode="udp" Description="Game port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
+    <Config Name="Client Port" Target="27005" Default="" Mode="udp" Description="Client port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">27005</Config>
+    <Config Name="Steam Port" Target="26900" Default="" Mode="udp" Description="Steam port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">26900</Config>
+    <Config Name="SourceTV Port" Target="27020" Default="" Mode="udp" Description="SourceTV port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">27020</Config>
 </Container>
