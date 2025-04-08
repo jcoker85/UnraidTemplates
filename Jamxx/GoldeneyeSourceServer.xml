@@ -13,7 +13,9 @@
         &#xD;
         **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
         &#xD;
-        Update Notice: Simply restart the container if a newer version of the game is available.</Overview>
+        Update Notice: Simply restart the container if a newer version of the game is available.</Overview> &#xD;
+        &#xD;
+        For more server setup information, please visit: https://docs.geshl2.com/server/
     <Category>GameServers:</Category>
     <WebUI/>
     <TemplateURL/>
@@ -28,10 +30,8 @@
     <Config Name="Server Data" Target="/servers/geserver" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/goldeneyesourceserver</Config>
     <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your start up commands for the server." Type="Variable" Display="always" Required="false" Mask="false">-port 27030</Config>
     <Config Name="Map" Target="MAP" Default="ge_archives" Mode="" Description="Map that server will start on." Type="Variable" Display="always" Required="false" Mask="false">ge_depot</Config>
-    <Config Name="Max Player Count" Target="MAXPLAYERS" Default="10" Mode="" Description="Maximum player count allowed on the server." Type="Variable" Display="always" Required="false" Mask="false">10</Config>
-    <Config Name="TCP Port" Target="27030" Default="" Mode="tcp" Description="Game port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
-    <Config Name="UDP Port" Target="27030" Default="" Mode="udp" Description="Game port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
-    <Config Name="Client Port" Target="27005" Default="" Mode="udp" Description="Client port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">27005</Config>
-    <Config Name="Steam Port" Target="26900" Default="" Mode="udp" Description="Steam port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">26900</Config>
-    <Config Name="SourceTV Port" Target="27020" Default="" Mode="udp" Description="SourceTV port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="advanced" Required="false" Mask="false">27020</Config>
+    <Config Name="Max Player Count" Target="MAXPLAYERS" Default="16" Mode="" Description="Maximum player count allowed on the server." Type="Variable" Display="always" Required="false" Mask="false">16</Config>
+    <Config Name="Install Mods" Target="INSTALL_MODS" Default="false" Mode="" Description="Install Metamod:Source 1.12 and Sourcemod 1.12 automatically." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+    <Config Name="RCON Port" Target="27030" Default="" Mode="tcp" Description="RCON port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
+    <Config Name="Game Port" Target="27030" Default="" Mode="udp" Description="Game port (see https://developer.valvesoftware.com/wiki/Source_Dedicated_Server)" Type="Port" Display="always" Required="true" Mask="false">27030</Config>
 </Container>
