@@ -34,7 +34,7 @@
     <Config Name="Server Name" Target="GAME_NAME" Default="" Mode="" Description="Enter the name for your server." Type="Variable" Display="always" Required="false" Mask="false">Arma Reforger Docker Server</Config>
     <Config Name="Server Password" Target="GAME_PASSWORD" Default="" Mode="" Description="Enter the password for your server." Type="Variable" Display="always" Required="false" Mask="false">docker</Config>
     <Config Name="Server Admin Password" Target="GAME_PASSWORD_ADMIN" Default="" Mode="" Description="Enter the admin password for your server." Type="Variable" Display="always" Required="false" Mask="false">dockerAdmin</Config>
-    <Config Name="RCON Password" Target="RCON_PASSWORD" Default="" Mode="" Description="Enter the RCON password for your server." Type="Variable" Display="always" Required="false" Mask="false">19999</Config>
+    <Config Name="RCON Password" Target="RCON_PASSWORD" Default="" Mode="" Description="Enter the RCON password for your server." Type="Variable" Display="always" Required="false" Mask="false">rconAdmin</Config>
     <Config Name="Admin List" Target="GAME_ADMINS" Default="" Mode="" Description="Enter a comma-delimited list of SteamIDs to specify admins." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Scenario ID" Target="GAME_SCENARIO_ID" Default="" Mode="" Description="Enter the scenario the server will run." Type="Variable" Display="always" Required="false" Mask="false">{ECC61978EDCC2B5A}Missions/23_Campaign.conf</Config>
     <Config Name="Max Players" Target="GAME_MAX_PLAYERS" Default="" Mode="" Description="Enter the max amount of players for your server." Type="Variable" Display="always" Required="false" Mask="false">64</Config>
