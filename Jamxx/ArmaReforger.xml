@@ -30,7 +30,7 @@
     <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/steamcmd</Config>
     <Config Name="Server Files" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/armareforger</Config>
     <Config Name="Game ID" Target="GAME_ID" Default="" Mode="" Description="The game ID that the container download at startup.&#13;&#10;(https://steamdb.info/)" Type="Variable" Display="always" Required="true" Mask="false">1874900</Config>
-    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your extra game parameters." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your extra game parameters." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Server Name" Target="GAME_NAME" Default="" Mode="" Description="Enter the name for your server." Type="Variable" Display="always" Required="false" Mask="false">Arma Reforger Docker Server</Config>
     <Config Name="Server Password" Target="GAME_PASSWORD" Default="" Mode="" Description="Enter the password for your server." Type="Variable" Display="always" Required="false" Mask="false">docker</Config>
     <Config Name="Server Admin Password" Target="GAME_PASSWORD_ADMIN" Default="" Mode="" Description="Enter the admin password for your server." Type="Variable" Display="always" Required="false" Mask="false">dockerAdmin</Config>
