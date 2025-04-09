@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="1">
+    <Name>ArmaReforger</Name>
+    <Repository>jcoker85/armareforger</Repository>
+    <Registry>https://hub.docker.com/r/jcoker85/armareforger</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/jcoker85/UnraidGameServers/issues</Support>
+    <Project>https://github.com/jcoker85/UnraidGameServers/tree/armareforger</Project>
+    <Overview>This Docker will download and install SteamCMD. It will also install an Arma Reforger server and run it.&#xD;
+        &#xD;
+        **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
+        &#xD;
+        Update Notice: Simply restart the container if a newer version of the game is available. &#xD;
+        &#xD;
+        Additional server configuration can be modified in default-config.json, located in the server installation directory, but the environment variables will override if they are available to be set.</Overview>
+    <Category>GameServers:</Category>
+    <WebUI/>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/Jamxx/images/armareforger.png</Icon>
+    <ExtraParams>--restart=unless-stopped</ExtraParams>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled/>
+    <DonateText/>
+    <DonateLink/>
+    <Requires/>
+    <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/steamcmd</Config>
+    <Config Name="Server Files" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/armareforger</Config>
+    <Config Name="Game ID" Target="GAME_ID" Default="" Mode="" Description="The game ID that the container download at startup.&#13;&#10;(https://steamdb.info/)" Type="Variable" Display="always" Required="true" Mask="false">1874900</Config>
+    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your extra game parameters." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Server Name" Target="GAME_NAME" Default="" Mode="" Description="Enter the name for your server." Type="Variable" Display="always" Required="false" Mask="false">Arma Reforger Docker Server</Config>
+    <Config Name="Server Password" Target="GAME_PASSWORD" Default="" Mode="" Description="Enter the password for your server." Type="Variable" Display="always" Required="false" Mask="false">docker</Config>
+    <Config Name="Server Admin Password" Target="GAME_PASSWORD_ADMIN" Default="" Mode="" Description="Enter the admin password for your server." Type="Variable" Display="always" Required="false" Mask="false">dockerAdmin</Config>
+    <Config Name="RCON Password" Target="RCON_PASSWORD" Default="" Mode="" Description="Enter the RCON password for your server." Type="Variable" Display="always" Required="false" Mask="false">19999</Config>
+    <Config Name="Admin List" Target="GAME_ADMINS" Default="" Mode="" Description="Enter a comma-delimited list of SteamIDs to specify admins." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Scenario ID" Target="GAME_SCENARIO_ID" Default="" Mode="" Description="Enter the scenario the server will run." Type="Variable" Display="always" Required="false" Mask="false">{ECC61978EDCC2B5A}Missions/23_Campaign.conf</Config>
+    <Config Name="Max Players" Target="GAME_MAX_PLAYERS" Default="" Mode="" Description="Enter the max amount of players for your server." Type="Variable" Display="always" Required="false" Mask="false">64</Config>
+    <Config Name="Max FPS" Target="MAX_FPS" Default="" Mode="" Description="Enter the max FPS the server will run at." Type="Variable" Display="always" Required="false" Mask="false">120</Config>
+    <Config Name="Validate Installation" Target="VALIDATE" Default="" Mode="" Description="Set the Variable to 'true' if you want to validate the installation otherwise leave it blank." Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+    <Config Name="Game Port" Target="2001" Default="" Mode="udp" Description="UDP Game Port (If you need another port delete this entry and create a new UDP port mapping here in the template with the Container and Host port set." Type="Port" Display="always" Required="false" Mask="false">2001</Config>
+    <Config Name="RCON Port" Target="19999" Default="" Mode="udp" Description="UDP RCON Port (If you need another port delete this entry and create a new UDP port mapping here in the template with the Container and Host port set." Type="Port" Display="always" Required="false" Mask="false">19999</Config>
+    <Config Name="A2S Port" Target="17777" Default="" Mode="udp" Description="UDP A2S Port (If you need another port delete this entry and create a new UDP port mapping here in the template with the Container and Host port set." Type="Port" Display="always" Required="false" Mask="false">17777</Config>
+    <Config Name="Steam-Username" Target="USERNAME" Default="" Mode="" Description="Your Steam username goes here if you want to install a game that needs a valid account, otherwise leave it blank (ATTENTION: You have to disable Steam Guard)." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+    <Config Name="Steam-Password" Target="PASSWRD" Default="" Mode="" Description="Your Steam password goes here if you want to install a game that needs a valid account, otherwise leave it blank (ATTENTION: You have to disable Steam Guard)." Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
+    <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+    <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+</Container>
