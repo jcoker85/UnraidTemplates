@@ -23,7 +23,7 @@
     <CPUset/>
     <DateInstalled/>
     <Requires/>
-    <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/steamcmd</Config>
+    <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/steamcmd</Config>
     <Config Name="Server Files" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/swordsnmagicandstuff</Config>
     <Config Name="Game ID" Target="GAME_ID" Default="" Mode="" Description="The game ID that the container download at startup.&#13;&#10;(https://steamdb.info/)" Type="Variable" Display="always" Required="true" Mask="false">2058450</Config>
     <Config Name="Server Name" Target="SNM_NAME" Default="" Mode="" Description="Enter the name for your server (must be 2-5 of the allowed words found in Saved/Logs/AllowedWords.txt)." Type="Variable" Display="always" Required="true" Mask="false">Turtle Market Puzzle</Config>
