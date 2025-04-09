@@ -13,9 +13,9 @@
         &#xD;
         **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
         &#xD;
-        Update Notice: Simply restart the container if a newer version of the game is available.</Overview> &#xD;
+        Update Notice: Simply restart the container if a newer version of the game is available. &#xD;
         &#xD;
-        For more server setup information, please visit: https://docs.geshl2.com/server/
+        For more server setup information, please visit: https://docs.geshl2.com/server/</Overview>
     <Category>GameServers:</Category>
     <WebUI/>
     <TemplateURL/>
