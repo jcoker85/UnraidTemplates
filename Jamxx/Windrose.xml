@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="1">
+    <Name>Windrose</Name>
+    <Repository>jcoker85/windrose</Repository>
+    <Registry>https://hub.docker.com/r/jcoker85/windrose/</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>bash</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/jcoker85/UnraidGameServers/issues</Support>
+    <Project>https://github.com/jcoker85/UnraidGameServers/tree/windrose</Project>
+    <Overview>This Docker will download and install SteamCMD. It will also install a Windrose server and run it.&#xD;
+        &#xD;
+        **ATTENTION:** First startup can take a long time since it downloads the server files and installs the runtimes! &#xD;
+        &#xD;
+        **NOTE:** After first startup of the server, shut it down and edit the following files to your liking:
+        - YOUR_INSTALL_PATH/R5/ServerDescription.json
+        - YOUR_INSTALL_PATH/R5/Saved/SaveProfiles/Default/RocksDB/_gameVersion_/Worlds/_worldId_/WorldDescription.json
+        The invite code used to join the server will be in ServerDescription.json &#xD;
+        &#xD;
+        Update Notice: Simply restart the container if a newer version of the game is available.</Overview>
+    <Category>GameServers:</Category>
+    <WebUI/>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/jcoker85/UnraidTemplates/main/Jamxx/images/windrose.png</Icon>
+    <ExtraParams>--restart=unless-stopped</ExtraParams>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled/>
+    <Requires/>
+    <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/steamcmd</Config>
+    <Config Name="Server Files" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/windrose</Config>
+    <Config Name="Game ID" Target="GAME_ID" Default="" Mode="" Description="The game ID that the container download at startup.&#13;&#10;(https://steamdb.info/)" Type="Variable" Display="always" Required="true" Mask="false">4129620</Config>
+    <Config Name="Validate Installation" Target="VALIDATE" Default="" Mode="" Description="Set the Variable to 'true' if you want to validate the installation otherwise leave it blank." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+    <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+    <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+</Container>
