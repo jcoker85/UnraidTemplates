@@ -32,6 +32,8 @@
     <Config Name="Server Files" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/windrose</Config>
     <Config Name="Game ID" Target="GAME_ID" Default="" Mode="" Description="The game ID that the container download at startup.&#13;&#10;(https://steamdb.info/)" Type="Variable" Display="always" Required="true" Mask="false">4129620</Config>
     <Config Name="Validate Installation" Target="VALIDATE" Default="" Mode="" Description="Set the Variable to 'true' if you want to validate the installation otherwise leave it blank." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+    <Config Name="Game TCP Port" Target="7777" Default="" Mode="tcp" Description="Only put a port here if using Direct IP connection (default value is 7777)" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Game UDP Port" Target="7777" Default="" Mode="udp" Description="Only put a port here if using Direct IP connection (default value is 7777)" Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
     <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
 </Container>
